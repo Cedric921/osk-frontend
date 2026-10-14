@@ -55,6 +55,7 @@ function transform(e: ApiEvent): OSKEvent {
     featured:    e.featured,
     registerUrl: e.registerUrl ?? "#",
     coverImage:  e.imageUrl ?? undefined,
+    startDate:   e.date,
     endDate:     e.endDate ?? undefined,
   };
 }
