@@ -15,7 +15,7 @@ export interface OSKEvent {
   slug:         string;
   type:         EventType;
   status:       EventStatus;
-  mode:         EventMode;
+  mode:         EventMode | null;
   title:        string;
   tagline:      string;
   description:  string;

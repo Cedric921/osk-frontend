@@ -97,6 +97,7 @@ const TypeBadge = ({ type }: { type: EventType }) => {
 };
 
 const ModeBadge = ({ mode }: { mode: OSKEvent["mode"] }) => {
+  if (!mode) return null;
   const styles = {
     "in-person": "bg-[#e8f1ff] text-[#2b7fff] border-[#c5d9ff]",
     virtual: "bg-gray-100 text-gray-600 border-gray-200",
